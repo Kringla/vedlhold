@@ -15,7 +15,7 @@ Rollen kalt **user** skal kun kunne SØKE i og LESE data i DB.
 Enkelhet i kode og visuelt inntrykk er viktig.
 
 ##DATABASENS INNHOLD:
-Databasen inneholder opplysninger om en families eiendeler og forvaltning av slike, fra matlaging til administrasjon av hytte.
+Databasen inneholder opplysninger om en families eiendommer og vedlikehold av slike.
 
 ##RESSURSBRUK:
 Jeg er leder av utviklingen, men koder ikke selv.

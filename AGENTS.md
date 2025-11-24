@@ -6,11 +6,12 @@ Denne filen gir Codex veiledning for arbeid i dette repoet, **vedlhold**.
 ## Rammer og referanser
 
 - Prosjektets styrende filer skal alltid leses **før** utvikling/endring av ny kode. Disse er:
+  - `_basis/Vedlhold_PReqD.md` — oversikt over prosjektets hensikt, krav og fremmdriftsprosess
   - `_basis/Vedlhold_PStrD.md` — prosjektets strukturer, repo-struktur og filoversikt  
-  - `_basis/Vedlhold_Schema.sql` — IhlensDb database-schema  
+  - `_basis/Vedlhold_Schema.md` — `Vedlhold` database-schema  
   - `_includes/bootstrap.php` — bootstrap-informasjon  
   - `config/constants.php` — konstanter i prosjektet  
-  - `assets/css/app.css` — prosjektets CSS-klasser
+  - `css/app.css` — prosjektets CSS-klasser
 
 - Bruk alltid **nyeste versjon** dersom flere versjoner finnes (`v*` = høyest nummer).
 
@@ -26,13 +27,13 @@ Denne filen gir Codex veiledning for arbeid i dette repoet, **vedlhold**.
 
 - Filene i `config/` skal **ikke** endres.
 
-- Tabeller som starter med 'x' er såkalte **parametertabeller**
+- Tabeller som starter med 'z' er såkalte **parametertabeller**
 
 ## Tillatte endringer
 
 - Det er lov å endre filer, men ikke bryte eksisterende funksjonalitet for innlegging av data.
-- Eksisterende CSS-klasser i `assets/css` skal beholdes. Nye regler skal legges i `assets/css/app.css`.
-- Bruk `app.css` fremfor inline `<style>`.
+- Eksisterende CSS-klasser i .css - filer i `css/` skal beholdes. Nye regler skal legges i `css/app.css`.
+- Bruk .css - filer i `css/` fremfor inline `<style>`.
 
 ## Generelle prinsipper
 
@@ -41,7 +42,7 @@ Denne filen gir Codex veiledning for arbeid i dette repoet, **vedlhold**.
   - Bruk `h()` for output escaping.  
   - Bruk `basename()` på filnavn hvis dynamiske bildekilder.
   - Når ferdig med kodingsoppgaven skal du:
-	-	Kontrollere at løsningen tilfredsstiller kravene i CR'en, IhlenWeb_PStrD.md og denne AGENTS.md
+	-	Kontrollere at løsningen tilfredsstiller kravene i CR'en, Vedlhold_PStrD.md og denne AGENTS.md
 	-   Fjerne fra repoet "temp"-filer som kun var for bruk ifm. det aktuelle kodingsarbeidet.
 
 - **CSS**:  
