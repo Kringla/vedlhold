@@ -29,6 +29,26 @@ Denne filen gir Codex veiledning for arbeid i dette repoet, **vedlhold**.
 
 - Tabeller som starter med 'z' er såkalte **parametertabeller**
 
+## Databasens tabell strukturer
+
+Databasens tabeller er strukturert slik:
+
+Eiendom
+   └── Bygg
+         └── Rom
+               └── Objekt
+                     ├── VedlikeholdPlan
+                     ├── VedlikeholdJobb
+                     │       ├── JobbProdukt
+                     │       └── JobbRessurs
+                     └── (evt. objekthistorikk senere)
+
+Produkt
+   ├── ProduktKjøp
+   └── ProduktLager
+
+I tillegg finnes **parametertabeller** som alle begynner med bokstaven **z**
+
 ## Tillatte endringer
 
 - Det er lov å endre filer, men ikke bryte eksisterende funksjonalitet for innlegging av data.
